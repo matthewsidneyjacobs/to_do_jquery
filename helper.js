@@ -18,7 +18,7 @@ $(document).ready(function(){
 	//this removes just the item you clicked. i looked up the on function to learn
 	//i needed to change my selector to 'li'
 	$(document).on('click', 'li', function() {
-		var lastItemAdded = $('li[-1]').val();
+		var lastItemAdded = $('li').val();
 		$(this).remove(lastItemAdded);
 	});
 });
